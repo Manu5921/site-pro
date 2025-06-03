@@ -1,0 +1,36 @@
+{
+  "site": {
+    "title": "Votre Agence Digitale",
+    "base_url": "/",
+    "favicon": "/images/favicon.png",
+    "logo": "/images/logo.png",
+    "logo_width": "200",
+    "logo_height": "48",
+    "logo_text": "Agence Digitale"
+  },
+
+  "settings": {
+    "pagination": 4,
+    "summary_length": 200,
+    "blog_folder": "blogs"
+  },
+
+  "nav_button": {
+    "enable": true,
+    "label": "Commencer",
+    "link": "/contact"
+  },
+
+  "params": {
+    "contact_form_action": "",
+    "tag_manager_id": "",
+    "footer_content": "Votre partenaire digital pour le marketing, le SEO et la création de sites web sur mesure.",
+    "copyright": "Conçu et développé avec ❤️"
+  },
+
+  "metadata": {
+    "meta_author": "Votre Agence Digitale",
+    "meta_image": "/images/og-image.png",
+    "meta_description": "Agence spécialisée en marketing digital, SEO et création de sites web"
+  }
+}
