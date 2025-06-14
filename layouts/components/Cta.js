@@ -19,15 +19,28 @@ function Cta({ cta }) {
           <div className="mt-5 text-center md:col-6 lg:col-5 md:mt-0 md:text-left">
             <h2>{cta?.title}</h2>
             <p className="mt-6">{markdownify(cta?.content)}</p>
-            {cta.button.enable && (
-              <Link
-                className="btn btn-primary mt-4"
-                href={cta.button.link}
-                rel={cta.button.rel}
-              >
-                {cta.button.label}
-              </Link>
-            )}
+            
+            <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:gap-4">
+              {cta.button.enable && (
+                <Link
+                  className="btn btn-outline"
+                  href={cta.button.link}
+                  rel={cta.button.rel}
+                >
+                  {cta.button.label}
+                </Link>
+              )}
+              
+              {cta.express_button?.enable && (
+                <Link
+                  className="btn btn-primary"
+                  href={cta.express_button.link}
+                  rel={cta.express_button.rel}
+                >
+                  {cta.express_button.label}
+                </Link>
+              )}
+            </div>
           </div>
         </div>
       </div>

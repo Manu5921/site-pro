@@ -17,9 +17,9 @@ feature:
   - name: "SEO Optimisé"
     icon: "/images/code.svg"
     content: "Optimisation pour les moteurs de recherche pour améliorer votre visibilité en ligne"
-  - name: "Création de Sites Web"
+  - name: "Site Web Express ⚡"
     icon: "/images/cloud.svg"
-    content: "Sites web modernes, responsifs et optimisés pour la performance"
+    content: "Site professionnel livré en 48h - 399€ + maintenance 29€/mois"
   - name: "Analyse de Données"
     icon: "/images/love.svg"
     content: "Suivi et analyse détaillés de vos performances digitales"
@@ -52,6 +52,23 @@ services:
       label: Découvrir
       link: /contact
 
+  - title: "Site Web Express - Livré en 48h ⚡"
+    content: "Besoin d'un site web rapidement ? Notre service express vous livre un site professionnel, responsive et optimisé SEO en seulement 48 heures. Design moderne adapté à votre secteur d'activité. Hébergement sécurisé inclus + maintenance 29€/mois."
+    images: 
+      - "/images/service-slide-2.png"
+      - "/images/service-slide-3.png"
+    button:
+      enable: true
+      label: "Commander maintenant - 399€"
+      link: "http://localhost:3334/demande?utm_source=site_pro&utm_medium=service_section&utm_campaign=site_express"
+      style: "primary"
+    features:
+      - "✅ Design professionnel adapté à votre secteur"
+      - "✅ Site responsive (mobile, tablette, desktop)"
+      - "✅ Optimisation SEO de base incluse"
+      - "✅ Formulaire de contact fonctionnel"
+      - "✅ Hébergement sécurisé et maintenance"
+
   - title: "Une équipe expérimentée à votre service"
     content: "Notre équipe d'experts passionnés met son savoir-faire à votre disposition pour vous accompagner dans tous vos projets digitaux. Nous combinons expertise technique et créativité pour vous offrir des solutions innovantes et performantes, adaptées à vos objectifs business."
     images:
@@ -83,10 +100,14 @@ workflow:
 # call_to_action
 call_to_action:
   title: Prêt à commencer ?
-  content: Contactez-nous dès aujourd'hui pour discuter de votre projet et découvrir comment nous pouvons vous aider à atteindre vos objectifs digitaux.
+  content: Contactez-nous pour un devis personnalisé ou commandez directement votre site web express livré en 48h.
   image: '/images/cta.svg'
   button:
     enable: true
     label: "Contactez-nous"
     link: "/contact"
+  express_button:
+    enable: true
+    label: "Site Express - 399€"
+    link: "http://localhost:3334/demande?utm_source=site_pro&utm_medium=cta&utm_campaign=express"
 ---

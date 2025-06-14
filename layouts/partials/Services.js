@@ -46,19 +46,37 @@ const Services = ({ services }) => {
             >
               <h2 className="font-bold leading-[40px]">{service?.title}</h2>
               <p className="mb-2 mt-4">{service?.content}</p>
+              
+              {/* Features list for express service */}
+              {service?.features && (
+                <ul className="mt-4 mb-6 space-y-2">
+                  {service.features.map((feature, idx) => (
+                    <li key={idx} className="text-sm text-gray-700">
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+              )}
+
               {service.button.enable && (
                 <Link
                   href={service?.button.link}
-                  className="cta-link inline-flex items-center text-primary"
+                  className={`inline-flex items-center ${
+                    service?.button?.style === 'primary' 
+                      ? 'btn btn-primary text-white' 
+                      : 'cta-link text-primary'
+                  }`}
                 >
                   {service?.button.label}
-                  <Image
-                    className="ml-1"
-                    src="/images/arrow-right.svg"
-                    width={18}
-                    height={14}
-                    alt="arrow"
-                  />
+                  {service?.button?.style !== 'primary' && (
+                    <Image
+                      className="ml-1"
+                      src="/images/arrow-right.svg"
+                      width={18}
+                      height={14}
+                      alt="arrow"
+                    />
+                  )}
                 </Link>
               )}
             </div>
