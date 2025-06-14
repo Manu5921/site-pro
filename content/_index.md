@@ -60,7 +60,7 @@ services:
     button:
       enable: true
       label: "Commander maintenant - 399€"
-      link: "https://website-generator-platform.vercel.app/demande?utm_source=site_pro&utm_medium=service_section&utm_campaign=site_express"
+      link: "https://website-generator-platform-4gv2f43iq.vercel.app/demande?utm_source=site_pro&utm_medium=service_section&utm_campaign=site_express"
       style: "primary"
     features:
       - "✅ Design professionnel adapté à votre secteur"
@@ -109,5 +109,5 @@ call_to_action:
   express_button:
     enable: true
     label: "Site Express - 399€"
-    link: "https://website-generator-platform.vercel.app/demande?utm_source=site_pro&utm_medium=cta&utm_campaign=express"
+    link: "https://website-generator-platform-4gv2f43iq.vercel.app/demande?utm_source=site_pro&utm_medium=cta&utm_campaign=express"
 ---
